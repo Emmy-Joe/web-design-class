@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body>
+
+    <span>Enter first No.</span>
+    <input id="firstNo" type="text"> <br><br>
+
+    <span>Enter a Maths Operator</span>
+    <input id="operator" type="text"><br><br>
+
+    <span>Enter second No.</span>
+    <input id="secondNo" type="text"> <br><br>
+    
+    <input onclick="cal()" type="submit"> <input type="reset">
+    <br>
+    <h2 id="output"></h2>
+
+    <br><br>
+    <h3><a href="https://crystallink.org/#contact" target="_blank">Contact Us</a></h3>
+
+    <script>
+        
+        function cal(){
+            let input1 = document.getElementById('firstNo').value;
+            let op = document.getElementById('operator').value;
+            let input2 = document.getElementById('secondNo').value;    
+            
+            a = Number(input1)
+            b = Number(input2)
+            let result;
+
+            if(op == '+'){
+                result = a + b;
+            }
+            else if(op == '-'){
+                result = a - b;
+            }
+            else if(op == '*' || op == 'x' || op == 'X'){
+                result = a * b;
+            }
+            else if(op == '/'){
+                result = a / b;
+            }
+            else{
+                window.alert("Please, enter a valid Maths Operator");
+            }
+
+            
+            console.log(result);
+            document.getElementById("output").textContent = result;
+            
+        }
+        
+    </script>
+</body>
+</html>

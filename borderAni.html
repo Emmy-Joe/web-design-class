@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border ANimation</title>
+
+    <style>
+        .service-container{
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+            row-gap: 1em;
+            margin: 10px;
+            justify-items: center;
+            } 
+
+        .s-card{
+            margin: 2em auto;
+            width: 260px;
+            padding: 1.2em;
+            background: linear-gradient(rgba(0, 184, 222), rgb(62, 60, 60), #f8f9faf4);
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        @property --angle{
+            syntax: "<angle>";
+                initial-value: 0deg;
+                inherits: false;
+        }
+
+        .s-card::after, .s-card::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* background-image: conic-gradient(red, yellow, green, red); */
+            /* background-image: conic-gradient(red, transparent 60%, blue); */
+            background-image: conic-gradient(from var(--angle), transparent 10%, blue, red, yellow, grey); 
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: 4s borderAnimate linear infinite;
+        }
+        @keyframes borderAnimate{
+            from{
+                --angle: 0deg;
+            }
+            to{
+                --angle: 360deg;
+            }
+        }
+
+        .s-card::before{
+            filter: blur(1.5em);
+            opacity: 0.2;
+        }
+
+        
+.s-card{
+  border-radius: 10%;
+  height: auto;
+  width: 210px;
+  box-shadow: 3px 3px 6px #000;
+}
+.s-card h3{
+  color: #fff;
+  text-shadow: 1px 1px 2px#212529;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.s-card p{
+  color: rgb(247, 227, 227);
+  text-shadow: 1px 1px 2px rgba(0, 46, 110) ;
+}
+
+.s-card a{
+  color: white;
+  padding: 1px 8px;
+  border: 2px ridge white;
+  border-radius: 10px;
+  background-color: rgb(0, 185, 222);
+}
+
+.s-card:hover{
+    font-weight: 1000;
+    /* width: calc(99% + 1px);   */
+  /* height: calc(100% + 5px);  Increases height by 10px */ 
+  }
+
+    </style>
+</head>
+<body>
+    
+
+        <section class="service-container">
+
+              <div class="s-card">
+              <h3>JAMB/SSCE TUTORIALS <br> <small style="font-size: 14px;">(Also, PostUTME & Holiday Lessons)</small></h3> <hr>
+              <p id="waec_neco_gce">#11,000 
+                <span>Per Month</span></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20Tutorials.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
+           
+  
+              <div class="s-card">
+              <h3>WAEC GCE Registration</h3> <hr>
+              <p> #33,000 <br> <small style="font-size: 15px;">(Covers PIN & Biometrics)</small>
+                <small>NIN is Compulsory</small> <small style="font-size: 14px;"> <a href="https://blog.crystallink.org/blog/2024/07/06/waec-gce-2024-2nd-series-registration/" target="_blank">
+                  <button class="btn">More Info</button></a> </small></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WAEC%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
+           
+  
+              <div class="s-card">
+              <h3>NECO GCE Registration</h3> <hr>
+              <p> #29,500 <br> <small style="font-size: 15px;">(Covers TOKEN & Biometric)</small><hr>
+                <small>NIN is Compulsory</small></p> <hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20NECO%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is: " target="_blank">Register</a></span>
+              </div>
+           
+  
+            <div class="s-card">
+              <h3 id="coding_class">COMPUTER APPRECIATION <br> <small style="font-size: 14px;">(OS, Word, Excel & PP)</small></h3> <hr>
+              <p>#30,000 <hr>
+                <span>6-Weeks</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20COMPUTER%20BASICS.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
+  
+            <div class="s-card">
+              <h3>WEBSITE DEVELOPMENT <br><small style="font-size: 14px;">(Vanilla HTML, CSS, & JS)</small></h3> <hr>
+              <p> #70,000 <hr>
+                <span>10-Weeks</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20WEBSITE%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+              </div>
+
+            <div class="s-card">
+              <h3>ADVANCED WEBSITE DEVELOPMENT <br>
+                <small style="font-size: 16px;">(React JS)</small></h3> <hr>
+              <p> #75,000 <hr>
+                <span>3-Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20REACT%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+            </div>
+  
+            <div class="s-card">
+              <h3>BACK-END WEB DEVELOPMENT</h3> <hr>
+              <p>#100,000 <hr>
+                <span>4 Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20GCE.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+            </div>
+  
+            <div class="s-card">
+              <h3>COMPUTER <small>PROGRAMMING (PYTHON)</small></h3> <hr>
+              <p>#70,000 <hr>
+                <span>3-Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20PROGRAMMING%20USING%20PYTHON.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+            </div>
+  
+            <div class="s-card">
+              <h3>MOBILE APP <small>DEVELOPMENT</small></h3> <hr>
+              <p>#200,000 <hr>
+                <span>4-Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20MOBILE%20APP%20DEVELOPMENT.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+            </div>
+  
+            <div class="s-card">
+              <h3>UI/UX DESIGN</h3> <hr>
+              <p id="website_developer">#80,000 <hr>
+                <span>3-Months</span>
+              </p><hr>
+              <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20registering%20for%20UI/UX%20DESIGN.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Register</a></span>
+            </div>
+  
+            
+              <div class="s-card" style="margin: 0px 3px;">
+                <h3>NEED A WEBSITE?</h3> 
+                <p><small>Yes! Your business surely does!! <hr>
+                  Let us help you shine online!</small>
+                </p>
+                <span><a href="https://wa.me/2347089111115?text=Hello%20CRYSTALLINK%2C%20I%20am%20interested%20in%20having%20a%20Website.%0A%0AMy%20location%20is:%0A%0AMy%20name%20is:" target="_blank">Contact Us</a></span>
+            </div>
+            
+        </section>
+   
+        
+
+</body>
+</html>

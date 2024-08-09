@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>if - else statement</h3>
+    <h5 id="age-level"></h5>
+
+    <script>
+        let age = 18;
+        let level;
+
+        if(age <= 10){
+            level = 'Primary';
+        }
+        else if(age <= 18){
+            level = 'Secondary';
+        }
+        else if(age <= 25){
+            level = "Degree";
+        }
+        else{
+            level = "Masters"
+        }
+
+        document.getElementById("age-level").innerHTML = level
+        console.log(level)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome to Our Contact Page</h2>
+    <h4>please fill the form below</h4><br>
+
+    <form action="form.php" method="post">
+        <p>Title:
+            <label for="mr">Mr.</label>
+            <input type="radio" name="gender">
+            <label for="mrs">Mrs</label>
+            <input type="radio" name="gender">
+            <label for="miss">Miss</label>
+            <input type="radio" name="gender">
+            </p>
+            <br>
+
+            <p>
+                <label for="fullname:">Fullname:</label>
+                <input type="text" placeholder="Surname First">
+            </p><br>
+
+            <p>
+                <label for="number:">Quanty:</label>
+                <input type="number" min="0" max="10" value="1">
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" placeholder="+234 806 720 7668" pattern="[0-9]{17}">
+            </p>
+
+        <p>Gender:
+        <label for="male">Male</label>
+        <input type="radio" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" name="gender">
+        </p>
+
+
+        <input type="submit">
+
+    </form>
+
+    <h1>some html tags</h1>
+    <p>this is a <small>test</small></p>
+    <p>this is a <big>test</big></p>
+    
+</body>
+</html>

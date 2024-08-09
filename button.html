@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Abuot Us</h2>
+   <span>Welcom to Our Page. we are into JAMB, WAEC, CODING CLASSES.</span>
+   <span id="more">We are amet consectetur adipisicing elit. Nobis error magnam laudantium.</span>
+   <button id="btn-more" onclick="showExtraText()"></button>
+    
+    
+    <script>
+        const extraText = document.getElementById("more");
+        let btn = document.getElementById('btn-more');
+        extraText.style.display = 'none';
+        btn.innerHTML = "More";
+
+        function showExtraText(){
+            if(btn.innerHTML === "More"){
+                extraText.style.display = 'inline';
+                btn.innerHTML = 'Less';
+            }
+            else{
+                extraText.style.display = 'none';
+                btn.innerHTML = 'More';
+            }
+        }
+
+      
+
+
+
+        //     let moreText = document.getElementById('more');
+        //     let btn = document.getElementById('btn');
+        //     moreText.style.display = 'none'
+        //     if(moreText.style.display = 'none'){
+        //         btn.innerHTML = 'More'
+        //         btn.style.display = 'block'
+        //     }
+
+        // function more(){
+        //     if(btn.innerHTML === 'More'){
+        //     moreText.style.display = 'inline';
+        //     btn.innerHTML = 'Less';}
+
+        //     else{
+        //         moreText.style.display = 'none';
+        //         btn.innerHTML = 'More';
+        //     }
+        // }
+
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h2>Please fill the order form below</h2>
+    <section>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" placeholder="Mr or Mrs or Miss" id="title" maxlength="4">
+            <br>
+            <label for="fullname">Fullname:</label>
+            <input type="text" id="fullname" placeholder="surname first"><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="minimum of six characters" minlength="6" maxlength="12"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc@example.com"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="******"><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="0806-720-7668" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+
+            <label for="date">Date:</label>
+            <input type="datetime-local" id="date"><br>
+
+            <label for="number">Quantity:</label>
+            <input type="number" min="0" max="999" value="1"><br><br>
+
+            <label for="payment"> Card Type:</label>
+            <select name="card" id="payment">
+                <option value="verve">Verve</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+            </select> <br><br>
+
+            <label for="file">Select File:</label>
+            <input type="file" accept="image/jpeg, image/png">
+
+
+
+           <br><br> <input type="reset"><br>
+            <input type="submit">
+
+        </form>
+    </section>
+</body>
+</html>

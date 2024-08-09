@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+    <!--header-section-->
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><img src="img/icons/close_icon.png" height="40px" width="auto" alt=""></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="showOnMobile"><img src="img/icons/crystallink-logo.png" height="26px" width="auto" alt="CLT"></li>
+                <li class="hideOnMobile"><a href="">Home</a></li>
+                <li class="hideOnMobile"><a href="">About</a></li>
+                <li class="hideOnMobile"><a href="">Services</a></li>
+                <li class="hideOnMobile"><a href="">Contact</a></li>
+                <li class="showOnMobile" onclick="showSideBar()"><img src="img/icons/menu_icon.png" height="40px" alt=""></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row text-center"><h1>About Us</h1></div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p><h3>column 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nobis at sequi aspernatur obcaecati. Accusantium neque tempore vitae dolorem, corporis culpa vero ab, expedita labore eveniet voluptatibus ratione vel. Repellendus.</p>
+                    <button class="btn btn-lg text-danger">Click 1</button>
+                </div>
+
+                <div class="col-sm-4">
+                    <p><h3>column 2</h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nobis at sequi aspernatur obcaecati. Accusantium neque tempore vitae dolorem, corporis culpa vero ab, expedita labore eveniet voluptatibus ratione vel. Repellendus.</p>
+                    <button class="btn btn-lg btn-primary">Click 2</button>
+                </div>
+
+                <div class="col-sm-4">
+                    <p><h3>column 3</h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nobis at sequi aspernatur obcaecati. Accusantium neque tempore vitae dolorem, corporis culpa vero ab, expedita labore eveniet voluptatibus ratione vel. Repellendus.</p>
+                    <button class="btn btn-lg text-warning">Click 2</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+
+    <!--main- sectiob-->
+    <main>
+
+    </main>
+
+
+    <!--footer-section-->
+    <footer>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        function showSideBar(){
+            document.querySelector('.sidebar').style.display = 'block'
+        }
+
+        function hideSideBar(){
+            document.querySelector('.sidebar').style.display = 'none'
+        }
+
+
+    </script>
+</body>
+</html>

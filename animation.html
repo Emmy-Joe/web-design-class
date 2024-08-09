@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            row-gap: 2em;
+            column-gap: 5em;
+            margin: 10px;
+            justify-items: center;
+            
+        }
+
+        .card{
+            display: flex; 
+            float:inline-end;
+            border: 3px double orangered ;
+            border-radius: 15%;
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(234, 234, 206);
+            min-width: 350px;
+            height: auto;
+            
+            animation: 3s profile linear infinite;
+
+        }
+        @keyframes profile {
+               0%{
+                    transform: translate(0px, 0px) 
+                }
+                50%{
+                    transform: translate(0px, 20px)
+                }
+                100%{
+                    transform: translate(0px, 0px)
+                }
+            }
+
+
+        #pics{
+            border-radius: 50%;
+            animation: 4s profile-pics linear infinite;
+
+        }
+
+        @keyframes profile-pics {
+               0%{
+                    transform: rotate(-10deg) 
+                }
+                10%{
+                    transform: rotate(-20deg) 
+                }
+                50%{
+                    transform: rotate(0deg)
+                }
+                60%{
+                    transform: rotate(10deg) 
+                }
+                70%{
+                    transform: rotate(20deg)
+                }
+            }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2> <hr>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores perferendis mollitia vitae repellendus minus doloremque cupiditate magnam illum praesentium beatae, in commodi iure necessitatibus ut libero, fuga a impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione voluptates doloremque ullam error eius impedit, numquam iusto consequatur neque ipsa magni et voluptate possimus consequuntur at, mollitia itaque porro?Lorem ipsum dolor, </p>
+                <img src="img/Emmanuel Passport.png" alt="My Passport" id="pics" height="200px" width="auto">
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2> <hr>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores perferendis mollitia vitae repellendus minus doloremque cupiditate magnam illum praesentium beatae, in commodi iure necessitatibus ut libero, fuga a impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione voluptates doloremque ullam error eius impedit, numquam iusto consequatur neque ipsa magni et voluptate possimus consequuntur at, mollitia itaque porro?Lorem ipsum dolor, </p>
+                <img src="img/Emmanuel Passport.png" alt="My Passport" id="pics" height="200px" width="auto">
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2> <hr>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores perferendis mollitia vitae repellendus minus doloremque cupiditate magnam illum praesentium beatae, in commodi iure necessitatibus ut libero, fuga a impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione voluptates doloremque ullam error eius impedit, numquam iusto consequatur neque ipsa magni et voluptate possimus consequuntur at, mollitia itaque porro?Lorem ipsum dolor, </p>
+                <img src="img/Emmanuel Passport.png" alt="My Passport" id="pics" height="200px" width="auto">
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2> <hr>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores perferendis mollitia vitae repellendus minus doloremque cupiditate magnam illum praesentium beatae, in commodi iure necessitatibus ut libero, fuga a impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione voluptates doloremque ullam error eius impedit, numquam iusto consequatur neque ipsa magni et voluptate possimus consequuntur at, mollitia itaque porro?Lorem ipsum dolor, </p>
+                <img src="img/Emmanuel Passport.png" alt="My Passport" id="pics" height="200px" width="auto">
+        </div>
+
+        <div class="card">
+            <h2>About Me</h2> <hr>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores perferendis mollitia vitae repellendus minus doloremque cupiditate magnam illum praesentium beatae, in commodi iure necessitatibus ut libero, fuga a impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ratione voluptates doloremque ullam error eius impedit, numquam iusto consequatur neque ipsa magni et voluptate possimus consequuntur at, mollitia itaque porro?Lorem ipsum dolor, </p>
+                <img src="img/Emmanuel Passport.png" alt="My Passport" id="pics" height="200px" width="auto">
+        </div>
+    </div>
+    
+</body>
+</html>

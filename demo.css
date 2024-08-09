@@ -1,0 +1,51 @@
+/* DEMOSTRATE THE DISPLAY PROPERTY OF CSS */
+
+/* #div{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+
+
+#span{
+    background-color: yellowgreen;
+    display: block;
+    height: 60px;
+    width: 60px;
+} 
+
+.demo2{
+    font-size: 30px;
+} */
+
+
+
+
+.container{
+    display: flex;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 25px; 
+}
+
+.demo{
+    /* padding: 30px; */
+    background-color: transparent;
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    height: 7em;
+    width: 120px;
+    text-align: center;
+    font-size: 32px;
+    background: linear-gradient(rgba(135, 207, 235, 0.756), rgba(128, 128, 128, 0.47), white);
+    box-shadow: 2px 4px 8px black;
+}
+
+.demo:hover{
+    /* height: 7.05em; */
+    font-size: 40px;
+    cursor: pointer;
+    color: darkblue;
+}
